@@ -1,1 +1,1 @@
-# Final-Project-SOC10-avaluci
+# Final-Project-Soc-10-Ava,Alex,Christine,Luci
