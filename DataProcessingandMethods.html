@@ -1221,11 +1221,11 @@ calculation. In order to do this we used an independent two sample
 t-tests, which is a measure used to determine if there is a significant
 difference between the means of two different groups (in which the
 p-value is less than 0.05). We utilized the default t-test in R, which
-is a two-tailed Welch’s (unpaired) two-sample t-test. Given that the
+is a two-tailed Welch’s (unpaired) two-sample t-test.Given that the
 p-value was 0.1561 and it must be under 0.05 to show statistical
-significance, we conclude that in our test, strict prostitution laws
-were not statistically significant in explaining incarceration
-rates.</p>
+significance, we cfound that strict prostitution laws were not
+statistically significant between the places that we classified as
+strict versus not strict.</p>
 <p>T-Test: Highlighting states with specific policies on spatial graph
 of total # of female incarcerated to male incarcerated per state. If the
 p-value is less than 0.05 (or 5%), the result is considered
@@ -1247,7 +1247,7 @@ strictness_states_incar_fpi &lt;- states_incar_ipp %&gt;%
                                &quot;Wyoming&quot;, &quot;Montana&quot;, &quot;Colorado&quot;, &quot;Arizona&quot;, &quot;New Mexico&quot;, 
                                &quot;Arkansas&quot;, &quot;Mississippi&quot;, &quot;Tennessee&quot;, &quot;Alabama&quot;, &quot;Georgia&quot;, 
                                &quot;Florida&quot;, &quot;North Carolina&quot;, &quot;Maryland&quot;, &quot;Delaware&quot;, 
-                               &quot;Pennsylvania&quot;, &quot;Alaska&quot;, &quot;Hawaii&quot;, &quot;Virginia&quot;) ~ &quot;Not Strict&quot;)) %&gt;%
+                                &quot;Alaska&quot;, &quot;Hawaii&quot;, &quot;Virginia&quot;) ~ &quot;Not Strict&quot;)) %&gt;%
   group_by(Strictness) %&gt;% mutate(sum = sum(Total, na.rm = TRUE))
 
 head(strictness_states_incar_fpi) #shows new column that organizes states as strict vs not strict</code></pre>
