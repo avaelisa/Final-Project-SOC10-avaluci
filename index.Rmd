@@ -16,3 +16,7 @@ output: html_document
 * <a href="Conclusion.html">Conclusion</a> 
 * <a href="ContributionsReferencesAppendix.html">Contributions, References, and Appendix</a> 
 * <a href="CompleteReport.html">Complete Report</a> 
+
+## Github Links:
+* Original Repository: https://github.com/avaelisa/soc10finalproject-alex-christine-ava-luci
+* Repository for the Website: https://github.com/avaelisa/Final-Project-SOC10-aacl
