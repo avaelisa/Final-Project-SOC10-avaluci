@@ -7,6 +7,10 @@ output: html_document
 
 # Final Project Proposal
 
+Github Links:
+Original Repository: https://github.com/avaelisa/soc10finalproject-alex-christine-ava-luci
+Repository for the Website: https://github.com/avaelisa/Final-Project-SOC10-aacl
+
 ## Table of Contents
 
 * Introduction
