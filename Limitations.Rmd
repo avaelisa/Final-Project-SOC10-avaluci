@@ -1,0 +1,28 @@
+---
+title: "Final Project: State/Region Incarceration Levels by Sex"
+author: "Ava, Alex, Luci, and Christine"
+date: "6-7-26"
+output: html_document
+---
+
+## Limitations
+
+Notably, there are a few areas of limitations within our project. Firstly, given that our BJS correctional statistics report is from 2023, the data is not fully up to date in 2026 and there might be changes that are simply not reflecting in our findings. Given that recent years have seen an increase in incarcerations rates since a historic period of the decline from 2010-2021 as previously mentioned, we were especially interested in post-2022 data, which had a reported increase in prison population data of up by 2% (Bureau of Justice Statistics 2025). The earliest available data from BJS being only in 2023 is a significant limitation in itself. We also did not look into local incarceration rates and focused on state and federal populations, for which some states had different definitions for incarceration and jurisdiction.
+
+To be more specific, the BJS identified several states that used different criteria in reporting incarceration information. For example, in Alaska, Connecticut, Delaware, Hawaii, Rhode Island, and Vermont, prisons and jails formed one integrated system and the data included total jail and prison populations. In Idaho and Missouri, they did not include people being held in federal or other state prisons in its sentenced jurisdiction count; in Illinois, Massachusetts, New Jersey, South Dakota, and Utah, their reported figures included a small number of prisoners sentenced to 1 year or less; in Maryland and Oklahoma, the figures included people who were waiting in county jail to be moved to state prison, whereas Nevada excluded people serving time in residential confinement from its sentenced jurisdiction count. Finally, Wisconsin sentenced population counts were based on time served rather than sentence length prior to 2023 (Bureau of Justice Statistics, National Prisoner Statistics, 2022 and 2023, Table 4). These inconsistencies across state reporting measures may have the potential to influence our findings. In doing this investigation, we must also recognize that incarceration divides strictly along the lines of biological sex. When gender is recognized, inconsistencies arise between state and federal institutions (Harkin 2016). 
+Furthermore, prostitution severity presented by Decriminalize Sex Work could be out of date as some state laws are currently in flux. For example, as written on their “Oregon” report, DSW mentions “Oregon prostitution laws are currently in committee and may be receiving a full overhaul” (“Oregon Prostitution Laws,” DSW). However, there is no date attached to this note, and the statistics DSW links to for the summary of prostitution penalties has last been reviewed in 2016 (“Oregon Prostitution and Solicitation Laws,” Find Law, 2016). 
+
+Additionally, state strictness surrounding prostitution and the definitions for felony and misdemeanor offenses are defined differently by some states, which made it a labor-intensive task to determine an accurate estimate of the level of “strictness” and escalation to felonies. Besides Oklahoma, we defined the level of strictness based on the fact that these states will sometimes consider prostitution to be a felony. The states also use different criteria when considering if the prostitution case should be considered a felony. Furthermore, the rate at which the cases are punished as felonies is also not considered in our grouping, which could mean that not all “strict” states are equally strict. Nevertheless, such categorization was necessary for the t-test computation. If states did not specify their punishment for prostitution, such as length of imprisonment and the value of the fine, we referenced federal classifications to fill in the missing data and manually charted each state’s legal position on criminalizing prostitution to note any irregularities across states' class offense definitions (see “States” for a further breakdown).   
+
+Lastly, the prostitution data was largely unclear on whether some offenses were successfully charged or if the defendant was acquitted. This dataset was extracted from the FBI Crime Data Explorer, a national data resource that aims to provide transparency and promote access to crime statistics across the United States. In other words, we only were able to view the number of offenses pre-trial, before any final convictions were dealt as this precise information was not accessible online. As such, we encountered difficulties in measuring the precise number of offenses that an arrestee was successfully convicted for. Additionally, some states had very low prostitution offenses for a five year span, so we had to dismiss sex as a significant factor for these locations.
+
+## Table of Contents
+
+* <a href="index.html">Index</a>
+* <a href="Introduction.html">Introduction</a>
+* <a href="DataSources.html">Data Sources</a> 
+* <a href="DataProcessingandMethods.html">Data Processing and Methods</a>
+* <a href="Limitations.html">Limitations</a> 
+* <a href="Conclusion.html">Conclusion</a> 
+* <a href="ContributionsReferencesAppendix.html">Contributions, References, and Appendix</a> 
+* <a href="CompleteReport.html">CompleteReport</a> 

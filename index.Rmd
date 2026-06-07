@@ -1,0 +1,18 @@
+---
+title: "Final Project: State/Region Incarceration Levels by Sex"
+author: "Ava, Alex, Luci, and Christine"
+date: "6-7-26"
+output: html_document
+---
+
+# Final Project Proposal
+
+## Table of Contents
+
+* <a href="Introduction.html">Introduction</a>
+* <a href="DataSources.html">Data Sources</a> 
+* <a href="DataProcessingandMethods.html">Data Processing and Methods</a>
+* <a href="Limitations.html">Limitations</a> 
+* <a href="Conclusion.html">Conclusion</a> 
+* <a href="ContributionsReferencesAppendix.html">Contributions, References, and Appendix</a> 
+* <a href="CompleteReport.html">Complete Report</a> 

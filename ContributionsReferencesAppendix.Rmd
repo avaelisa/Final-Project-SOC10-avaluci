@@ -1,0 +1,149 @@
+---
+title: "Final Project: State/Region Incarceration Levels by Sex"
+author: "Ava, Alex, Luci, and Christine"
+date: "6-7-26"
+output: html_document
+---
+
+## Group Contributions
+
+### Ava
+
+* Completed some of the data preprocessing (creating new columns for region calculations (e.g., female, male, total/100,000) as well as state calculations, added tidycensus to the data, created dataframe and columns for strict v not strict states, created data frame for # of female/# of male ratio for each state)
+* Created stacked barcharts 
+* Created spatial maps
+* Completed t-test
+* Proofread code and made changes as fit
+* Wrote the method section alongside Christine 
+* Created and presented method slides alongside Christine
+* We all contributed to proofreading the report and finding the BJS dataset
+* Went to office hours to debug w/ Christine 
+* Attended all team meetings
+* Worked to complete the final report and knit pdf
+
+### Alex
+
+* Wrote initial code to create bar chart that represented incarceration rates by state
+  - Involved setting up the code that would mutate state names and removing unnecessary data
+* Manually went through FBI Crime Data Explorer to extract # of prostitution charges for all 50 states in the past 5 years 
+* Read through almost all state’s policy and legal codes on prostitution via DSW website to identify the punishment for each individual state
+  - Identified what different charge types entailed (e.g. second degree misdemeanor in Florida)
+  - Analyzed this data to identify and label stricter states 
+* Wrote the introduction section of paper 
+  - Included reading through the media, pulling from previous coursework in SOC 180A, gathering facts/statistics, and doing a literature review (reading studies)
+* Left comments, edits, and clarifications on all sections of the paper and incorporated feedback from Christine into the introduction
+* Presented motivations section of presentation and explained one data source slide
+  - Included creating a script  
+* Created slides within the motivation section of the slide deck (some got cut day of presentation) 
+
+### Christine
+
+* Helped edit the initial BJS dataset with Ava
+* Went to OH with Ava to ask questions on debugging code/on the project
+* Attended all group meetings to discuss project 
+* Wrote code in R to divide states into regions (e.g., using mutate(), case_match(), sum(), ggplot)
+  - Developed chart that measured incarceration rates by region
+* Wrote intro with Alex
+- Pulled most class sources, pulled external sources 
+- Clarified research questions 
+* Wrote conclusion
+  - Evaluated all results from data (identifying states and regions on incarceration numbers)
+  - Developed recommendations and directions for future research
+* Helped find sources to project 
+* Wrote method section with Ava 
+* Reviewed the code (e.g., catch errors, make titles more clear)
+* Created the slides with Ava for class presentation 
+* Reviewed the report, provided feedback, incorporated feedback (e.g.,made our intro connection to class reading; make language in the report clearer) 
+* Presented on barplots and conclusion + future directions for research during class presentation
+* Provided feedback during presentation practice (i.e. language, same page on findings)
+
+### Luci
+
+* Wrote the data and limitations section + incorporated feedback/revisions
+* Assisted with data collection for prostitution policy for below states + sourced information for the misdemeanor class key: Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, New Hampshire, New Jersey, New Mexico, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, and Rhode Island
+* Presented data and limitations slides for class presentations
+  - Detailing relevance, sources, etc. 
+* Cross-checked and compiled all sources for “References” section
+
+## References
+
+18 U.S. Code § 3559 - Sentencing classification of offenses. (2019). LII / Legal Information Institute. https://www.law.cornell.edu/uscode/text/18/3559
+
+Alexander, M. (2010). The New Jim Crow.
+
+Brown, E. N. (2025, March 26). These States Are Moving in the Wrong Direction on Prostitution Laws. Yahoo News. https://www.yahoo.com/news/states-moving-wrong-direction-prostitution-154553786.html
+
+Budd, K. (2024, July 24). Incarcerated Women and Girls. The Sentencing Project. https://www.sentencingproject.org/fact-sheet/incarcerated-women-and-girls/
+
+Bureau of Justice Statistics. (n.d.). About BJS. Bureau of Justice Statistics. https://bjs.ojp.gov/about
+
+Carson, E. A., & Kluckow, R. (2023, November 30). Prisoners in 2022 – Statistical Tables. Bureau of Justice Statistics. https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables
+
+Comfort, M. (2008). Doing Time Together. University of Chicago Press.
+
+Council on Criminal Justice. (2024, July 9). Women’s Justice: A Preliminary Assessment of Women in the Criminal Justice System - Council on Criminal Justice. Council on Criminal Justice. https://counciloncj.org/womens-justice-a-preliminary-assessment-of-women-in-the-criminal-justice-system/
+
+Cullen, J. (2018, July 20). The History of Mass Incarceration. Brennan Center for Justice. https://www.brennancenter.org/our-work/analysis-opinion/history-mass-incarceration
+
+Decriminalize Sex Work. (n.d.). Decriminalize Sex Work. https://decriminalizesex.work/
+
+Edward, W., Battle-Baptiste, W., & Rusert, B. (2018). W. E. B. Du Bois’s data portraits : visualizing Black America : the color line at the turn of the twentieth century. The W.E.B. Du Bois Center At The University Of Massachusetts Amherst ; Hudson. (In class reading)
+
+Enos, S. (2026). Mass Incarceration: Triple Jeopardy for Women in a “Color-Blind” and Gender-Neutral Justice System. Digital Commons @ Salve Regina. https://digitalcommons.salve.edu/jift/vol6/iss1/2/
+
+FBI. (2025, January 15). Federal Bureau of Investigation Crime Data Explorer. Cjis.gov; Federal Bureau of Investigation. https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend
+
+Incarceration Trends | Vera Institute of Justice. (2024, October 31). Trends.vera.org. https://trends.vera.org/
+
+Kajstura, A., & Sawyer, W. (2024, March 5). Women’s mass incarceration: The whole pie 2024. Prison Policy Initiative. https://www.prisonpolicy.org/reports/pie2024women.html
+
+Kim, S. J., & Peterson, C. (2020). The health effects of gendered and devalued work: health outcomes of incarcerated women engaging in sex work and care/service work. Health & Justice, 8(1). https://doi.org/10.1186/s40352-020-00124-4
+
+Maine Prostitution and Solicitation Laws. (2016, April 11). FindLaw. https://www.findlaw.com/state/maine-law/maine-prostitution-and-solicitation-laws.html
+
+Nellis, A. (2024, May 21). Mass Incarceration Trends. The Sentencing Project. https://www.sentencingproject.org/reports/mass-incarceration-trends/
+
+Oregon Prostitution and Solicitation Laws. (2016, April 11). FindLaw. https://www.findlaw.com/state/oregon-law/oregon-prostitution-and-solicitation-laws.html
+
+Prison Policy Initiative, & Sawyer, W. (2026). Mass Incarceration: The Whole Pie 2026. Prisonpolicy.org. https://www.prisonpolicy.org/reports/pie2026.html
+
+Snow, J. (2026). Map Viewer - Cholera Outbreak Map . Arcgis.com. https://www.arcgis.com/apps/mapviewer/index.html?webmap=16a719ed81524ef2ad86b57f6918712f (In-class reading)
+
+Stemen, D. (2017). The Prison Paradox: More Incarceration Will Not Make Us Safer. https://vera-institute.files.svdcdn.com/production/downloads/publications/for-the-record-prison-paradox_02.pdf
+
+BJS Table 42. (2017). FBI. https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/topic-pages/tables/table-42
+US Census Bureau. (2017, October 24). U.S. Census Bureau at a Glance. The United States Census Bureau. https://www.census.gov/about/what/census-at-a-glance.html
+
+## Appendix 
+
+```{r print out all tables of data, echo = T, message=F, warning=F}
+
+library(RCurl)
+library(readr)
+
+pros_url <- getURL("https://raw.githubusercontent.com/avaelisa/Final-Project-SOC10-avaluci/refs/heads/main/StrictnessProstitutionData.csv")
+
+# download prostitution data that we made (from github)
+prosdata <- read_csv(pros_url)
+
+print(prosdata) #prostitution data that we made 
+
+url <- getURL("https://raw.githubusercontent.com/avaelisa/soc10finalproject-alex-christine-ava-luci/refs/heads/main/soc10-dataset")
+
+# download incarceration data from the BJS (from github)
+data <- read_csv(url)
+
+print(data) #uncleaned data downloaded from the BJS
+
+```
+
+## Table of Contents
+
+* <a href="index.html">Index</a>
+* <a href="Introduction.html">Introduction</a>
+* <a href="DataSources.html">Data Sources</a> 
+* <a href="DataProcessingandMethods.html">Data Processing and Methods</a>
+* <a href="Limitations.html">Limitations</a> 
+* <a href="Conclusion.html">Conclusion</a> 
+* <a href="ContributionsReferencesAppendix.html">Contributions, References, and Appendix</a> 
+* <a href="CompleteReport.html">CompleteReport</a> 
