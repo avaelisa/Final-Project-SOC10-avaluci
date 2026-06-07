@@ -1,0 +1,21 @@
+---
+title: "Final Project: State/Region Incarceration Levels by Sex"
+author: "Ava, Alex, Luci, and Christine"
+date: "6-7-26"
+output: pdf_document
+---
+
+## Data Sources
+
+The statewide incarceration rate data used in our analysis is derived from the Correctional Populations in the United States Statistics Tables, a nationwide report published in 2023 by the Bureau of Justice Statistics (BJS) that summarizes information on populations supervised by parole agencies, incarcerated in state or federal prisons, or held in custody at old local jails, including data on sex, race, and ethnicity. The BJS is the official statistical agency of the Department of Justice and is considered the primary source for criminal justice statistics in the United States (“About BJS”). 
+
+Our dataset specifically included incarceration statistics under state or federal correctional authorities by sex in 2022 and 2023, excluding local incarceration data (link to csv). Given that in the United States there are around 546,000 people (84,000 of which are women) confined in local jails, excluding this data is an important limitation to our study (Sawyer, Wagner, and Nam-Sonenstein 2016). Additionally, more incarcerated women are held in jails than in state prisons and people who are arrested for prostitution crimes are more likely to serve misdemeanor sentences in local prisons (Kajstura and Sawyer 2024).  
+
+The tidycensus package was imported into the code and an API key was used in order to access statistics on the population in each state and spatial data (see “Methods”). Tidycensus enabled us to access credible data provided by the U.S Census Bureau, the federal government’s largest statistical agency for censuses and surveys (“U.S. Census Bureau at a Glance”). This data was used to create bar charts with defined populations that illustrated cohesively across the project as well as spatial data reflecting trends amongst incarceration and location. To connect states to their corresponding incarceration rates, the “left_join()” and “filter()” functions were also written into the code. 
+
+Additionally, data from the 501(c)3 national non-profit organization, Decriminalize Sex Work (DSW), was included in our analysis in order to understand state policie and legislation in order to identify the penalties surrounding sex work. DSW works to improve public attitudes toward sex work and the decriminalization of prostitution through public education, policy outreach, and lobbying state legislatures to change laws. According to DSW, decriminalizing sex work may help end human trafficking, improve public health, and promote community safety by making it possible for victims and witnesses to report exploitation without risking prosecution (“Why Decriminalization of Sex Work,” DSW). As such, their data was helpful in examining each state's prostitution laws to find any potential discrepancies or correlations between statewide prostitution law severity and incarceration rates among females compared to males. 
+
+Statistical tables from the BJS was read into R using the standard “read_csv()” function in the readr and RCurl packages. Tigris, viridis, tidycensus, sf,  dyplr, tidyr, and ggplot 2 were installed to process the data, as well as create and run the below graphs. The “mutate()” function was applied to ensure uniformity across the code while removing unnecessary variables, which was initially an obstacle encountered when cleaning the data. “Filter()” was used to eliminate places for which there was no data and were not states – Washington D.C and Puerto Rico. 
+
+These data sources were all integral to our project as they allowed us to view state-specific incarceration rates (where historically the literature has mostly focused on measuring federal incarceration rates), examine any sex-specific trends that emerged, and track possible correlations between state prostitution law severity and incarceration rates for a few states.  
+
