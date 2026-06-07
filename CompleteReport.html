@@ -357,6 +357,200 @@ Levels by Sex</h1>
 </div>
 
 
+<div id="final-project-proposal" class="section level1">
+<h1>Final Project Proposal</h1>
+<div id="table-of-contents" class="section level2">
+<h2>Table of Contents</h2>
+<ul>
+<li>Introduction</li>
+<li>Data Sources</li>
+<li>Data Processing and Methods</li>
+<li>Limitations</li>
+<li>Conclusion</li>
+<li>Contributions</li>
+<li>References</li>
+<li>Appendix
+<ul>
+<li>Appendix A: Original BJS CSV Dataset</li>
+<li>Appendix B: Prostitution Data</li>
+</ul></li>
+</ul>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>The United States of America is the world’s leader in incarceration,
+jailing and imprisoning almost two million people at this very moment.
+Incarceration rates skyrocketed in the 1970s as a response to
+politically imposed fear surrounding the “war on drugs” and a racialized
+crackdown on crime, allowing incarceration to reach its peak in 2009
+(e.g., Alexander 2010). These trends of heightened jailing are often
+referred to as mass incarceration, where “the U.S. incarcerates more
+people than any nation in the world” (Cullen 2018). This is a phenomenon
+that is often racialized and classed, targeting those on the margins and
+disproportionately affecting poor Black people (e.g., Clair 2020).</p>
+<p>While incarceration rates began to decline in 2010 and dropped
+sharply during the COVID-19 pandemic, recent years starting in 2022 have
+seen them trend upward again (Nellis and Pearce 2026). This is
+especially alarming given that the Vera Institute of Justice found that
+“there is a very weak relationship between higher incarceration rates
+and lower crime rates”(Stemen 2017). As a result of this heightened
+incarceration, more individuals became exposed to consequences beyond
+loss of freedom, which include potential violence behind bars, forced
+gang involvement, exposure to disease, and the potential for death while
+in custody. Additionally, punishment does not end just with the time
+spent incarcerated, as it often leads to further barriers after
+imprisonment, including legal, social, financial, and psychological
+obstacles, coupled with potential discrimination when it comes to
+securing employment and housing. The effects of incarceration do not
+apply simply to those incarcerated but also hold additional collateral
+consequences for the families and loved ones of those incarcerated
+(e.g., Megan 2019).</p>
+<p>Recognizing the harmful impacts of incarceration and the steady
+increases in national incarceration rates in the past few years, our
+group hopes to discover whether high levels of prison incarceration are
+primarily concentrated in a few states and/or regions — which contribute
+disproportionately to the national average — or if all states and
+regions are facing high and increasing rates of incarceration within
+prisons. Some language surrounding mass incarceration has previously
+referred to the United States as a mass contributor without recognizing
+if specific states contribute less or higher to this large-scale issue
+(e.g., Sawyer, Nam-Sonenstein, Wagner 2026) . Additionally, while some
+organizations (e.g., Nellis and Pearce 2026) do make efforts to
+spotlight states with heightened incarceration rates, regional
+differences are not often mentioned online. While we were initially
+planning to compare state-level incarceration rates to federal
+incarceration rates, we ultimately decided, based on the data available,
+that it would be more informative to conduct analyses within the
+state-level/regional context to keep the focus on these areas. Studying
+regions alongside individual states helps us to understand whether
+states in proximity to each other have similar patterns in regards to
+incarceration. Overall, this allows us to understand and answer one of
+our central research questions: How do incarceration levels vary from
+state to state and region by region?</p>
+<p>Another variable of interest is whether the number of females and
+males incarcerated differs across states, as well as if this is
+correlated to policies that target a specific sex. Historically, the
+literature surrounding incarceration often centers males without
+elevating policies or actions that may leave females most vulnerable to
+incarceration. Retired Sociology Professor Sandra Enos even asserts in
+her piece, “Mass Incarceration: Triple Jeopardy for Women in a
+‘Color-Blind’ and Gender-Neutral Justice System,” that the “strain of
+research [regarding the war on crime] has focused on men”
+(2012).Therefore, our work aims to bridge this gap and focus on whether
+sex can be a stratifier within incarceration numbers. In this project,
+we conflated gender and sex, given that our dataset only provided data
+based on sex.</p>
+<p>While there are far more men facing the criminal system than women,
+the Council on Criminal Justice reveals that “the incarceration rate for
+women in U.S. prisons and jails has trended upward over the past several
+decades” (Yen 2024), indicating that sex discrimination may play a role
+in heightened incarceration. Therefore, this leads to our secondary
+research question: How do state-level prison incarceration numbers vary
+by sex? Posing this research question will allow us to understand if sex
+is a characteristic leading to disproportionate rates of incarceration
+across states.</p>
+<p>By leveraging ready-made data from the Bureau of Justice Statistics
+and the U.S. Census, we identified states’ incarceration numbers,
+including by sex, and also controlled for population size. Therefore, it
+may indicate which states should make greater efforts toward reform. In
+addition to better understanding if sex played a factor in incarceration
+rate disproportionalities, we investigated states with harsher
+punishment for a crime often associated with female offenders:
+prostitution. FBI Data on offenses charged in 2017 reveals that nearly
+every crime, from robbery to gambling, had more than a majority of
+arrests and charges placed on men. Yet, the one exception is
+“prostitution and commercialized vice,” a crime that resulted in 61% of
+those arrests coming from female offenders (Federal Bureau of
+Investigation 2017). While prostitution is legalized in certain parts of
+Nevada, all other states criminalize sex work (Decriminalize Sex Work
+2023). While most states classify prostitution as a misdemeanor, 12
+states, which we classify as “stricter states,” have harsher punishments
+for this crime. Texas, Utah, Pennsylvania, Nevada, Kentucky, West
+Virginia, Vermont, Oklahoma, Louisiana, Idaho, Indiana, and Illinois
+will turn prostitution offenses into a felony charge or meet this crime
+with felony level punishments, such as 3 years’ imprisonment under
+certain circumstances (repeat offenses or doing sex work while knowingly
+having Human Immunodeficiency Virus (HIV)) (Decriminalize Sex Work
+2023). By focusing on states with stricter prostitution policies, this
+may reveal whether states with stricter punishments for crimes applied
+more frequently to females are correlated with higher female
+incarceration rates. Additionally, a 2020 study performed by health
+researchers Kim and Peterson indicated that despite only a small
+proportion of those incarcerated in female institutions being detained
+due to prostitution related offenses, roughly half of those incarcerated
+in their study had engaged in sex work despite not being incarcerated
+for sex work. Overall, this indicating that criminalizing sex work has
+the potential to inadvertently criminalize those already living on the
+margins, in addition to potentially influencing state-level
+incarceration numbers based on the sex of the offender. This is why we
+chose to focus on this topic for our project.</p>
+<p>The results and findings of our research will be further explored in
+the following sections, using computational social science methods in R,
+including data visualization and t-tests, comparing incarceration levels
+across different states.</p>
+</div>
+<div id="data-sources" class="section level2">
+<h2>Data Sources</h2>
+<p>The statewide incarceration rate data used in our analysis is derived
+from the Correctional Populations in the United States Statistics
+Tables, a nationwide report published in 2023 by the Bureau of Justice
+Statistics (BJS) that summarizes information on populations supervised
+by parole agencies, incarcerated in state or federal prisons, or held in
+custody at old local jails, including data on sex, race, and ethnicity.
+The BJS is the official statistical agency of the Department of Justice
+and is considered the primary source for criminal justice statistics in
+the United States (“About BJS”).</p>
+<p>Our dataset specifically included incarceration statistics under
+state or federal correctional authorities by sex in 2022 and 2023,
+excluding local incarceration data (link to csv). Given that in the
+United States there are around 546,000 people (84,000 of which are
+women) confined in local jails, excluding this data is an important
+limitation to our study (Sawyer, Wagner, and Nam-Sonenstein 2016).
+Additionally, more incarcerated women are held in jails than in state
+prisons and people who are arrested for prostitution crimes are more
+likely to serve misdemeanor sentences in local prisons (Kajstura and
+Sawyer 2024).</p>
+<p>The tidycensus package was imported into the code and an API key was
+used in order to access statistics on the population in each state and
+spatial data (see “Methods”). Tidycensus enabled us to access credible
+data provided by the U.S Census Bureau, the federal government’s largest
+statistical agency for censuses and surveys (“U.S. Census Bureau at a
+Glance”). This data was used to create bar charts with defined
+populations that illustrated cohesively across the project as well as
+spatial data reflecting trends amongst incarceration and location. To
+connect states to their corresponding incarceration rates, the
+“left_join()” and “filter()” functions were also written into the
+code.</p>
+<p>Additionally, data from the 501(c)3 national non-profit organization,
+Decriminalize Sex Work (DSW), was included in our analysis in order to
+understand state policie and legislation in order to identify the
+penalties surrounding sex work. DSW works to improve public attitudes
+toward sex work and the decriminalization of prostitution through public
+education, policy outreach, and lobbying state legislatures to change
+laws. According to DSW, decriminalizing sex work may help end human
+trafficking, improve public health, and promote community safety by
+making it possible for victims and witnesses to report exploitation
+without risking prosecution (“Why Decriminalization of Sex Work,” DSW).
+As such, their data was helpful in examining each state’s prostitution
+laws to find any potential discrepancies or correlations between
+statewide prostitution law severity and incarceration rates among
+females compared to males.</p>
+<p>Statistical tables from the BJS was read into R using the standard
+“read_csv()” function in the readr and RCurl packages. Tigris, viridis,
+tidycensus, sf, dyplr, tidyr, and ggplot 2 were installed to process the
+data, as well as create and run the below graphs. The “mutate()”
+function was applied to ensure uniformity across the code while removing
+unnecessary variables, which was initially an obstacle encountered when
+cleaning the data. “Filter()” was used to eliminate places for which
+there was no data and were not states – Washington D.C and Puerto
+Rico.</p>
+<p>These data sources were all integral to our project as they allowed
+us to view state-specific incarceration rates (where historically the
+literature has mostly focused on measuring federal incarceration rates),
+examine any sex-specific trends that emerged, and track possible
+correlations between state prostitution law severity and incarceration
+rates for a few states.</p>
+</div>
 <div id="data-processing-methods-and-figures" class="section level2">
 <h2>Data Processing, Methods, and Figures</h2>
 <div id="data-processing" class="section level3">
@@ -478,6 +672,7 @@ states &lt;- get_acs(
   geometry = TRUE,
   year = 2023) %&gt;%
   filter(!NAME %in% c(&quot;District of Columbia&quot;, &quot;Puerto Rico&quot;)) #remove these here as well</code></pre>
+<pre><code>##   |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   4%  |                                                                              |===                                                                   |   5%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |=====                                                                 |   8%  |                                                                              |======                                                                |   8%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |=======                                                               |  11%  |                                                                              |========                                                              |  11%  |                                                                              |========                                                              |  12%  |                                                                              |=========                                                             |  12%  |                                                                              |=========                                                             |  13%  |                                                                              |==========                                                            |  14%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |============                                                          |  17%  |                                                                              |============                                                          |  18%  |                                                                              |=============                                                         |  18%  |                                                                              |=============                                                         |  19%  |                                                                              |==============                                                        |  20%  |                                                                              |===============                                                       |  21%  |                                                                              |===============                                                       |  22%  |                                                                              |================                                                      |  22%  |                                                                              |================                                                      |  23%  |                                                                              |=================                                                     |  24%  |                                                                              |=================                                                     |  25%  |                                                                              |==================                                                    |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |===================                                                   |  27%  |                                                                              |===================                                                   |  28%  |                                                                              |====================                                                  |  28%  |                                                                              |====================                                                  |  29%  |                                                                              |=====================                                                 |  29%  |                                                                              |=====================                                                 |  30%  |                                                                              |======================                                                |  31%  |                                                                              |======================                                                |  32%  |                                                                              |=======================                                               |  32%  |                                                                              |=======================                                               |  33%  |                                                                              |========================                                              |  34%  |                                                                              |========================                                              |  35%  |                                                                              |=========================                                             |  35%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  37%  |                                                                              |===========================                                           |  38%  |                                                                              |===========================                                           |  39%  |                                                                              |============================                                          |  39%  |                                                                              |============================                                          |  40%  |                                                                              |=============================                                         |  41%  |                                                                              |=============================                                         |  42%  |                                                                              |==============================                                        |  43%  |                                                                              |===============================                                       |  44%  |                                                                              |===============================                                       |  45%  |                                                                              |================================                                      |  45%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  47%  |                                                                              |=================================                                     |  48%  |                                                                              |==================================                                    |  48%  |                                                                              |==================================                                    |  49%  |                                                                              |===================================                                   |  49%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================                                  |  51%  |                                                                              |====================================                                  |  52%  |                                                                              |=====================================                                 |  52%  |                                                                              |=====================================                                 |  53%  |                                                                              |======================================                                |  54%  |                                                                              |======================================                                |  55%  |                                                                              |=======================================                               |  55%  |                                                                              |=======================================                               |  56%  |                                                                              |========================================                              |  57%  |                                                                              |=========================================                             |  58%  |                                                                              |=========================================                             |  59%  |                                                                              |==========================================                            |  59%  |                                                                              |==========================================                            |  60%  |                                                                              |===========================================                           |  61%  |                                                                              |===========================================                           |  62%  |                                                                              |============================================                          |  62%  |                                                                              |============================================                          |  63%  |                                                                              |=============================================                         |  64%  |                                                                              |=============================================                         |  65%  |                                                                              |==============================================                        |  65%  |                                                                              |==============================================                        |  66%  |                                                                              |===============================================                       |  66%  |                                                                              |===============================================                       |  67%  |                                                                              |===============================================                       |  68%  |                                                                              |================================================                      |  68%  |                                                                              |================================================                      |  69%  |                                                                              |=================================================                     |  70%  |                                                                              |=================================================                     |  71%  |                                                                              |==================================================                    |  71%  |                                                                              |==================================================                    |  72%  |                                                                              |===================================================                   |  73%  |                                                                              |====================================================                  |  74%  |                                                                              |====================================================                  |  75%  |                                                                              |=====================================================                 |  75%  |                                                                              |=====================================================                 |  76%  |                                                                              |======================================================                |  77%  |                                                                              |======================================================                |  78%  |                                                                              |=======================================================               |  78%  |                                                                              |=======================================================               |  79%  |                                                                              |========================================================              |  80%  |                                                                              |========================================================              |  81%  |                                                                              |=========================================================             |  81%  |                                                                              |=========================================================             |  82%  |                                                                              |==========================================================            |  82%  |                                                                              |==========================================================            |  83%  |                                                                              |===========================================================           |  84%  |                                                                              |===========================================================           |  85%  |                                                                              |============================================================          |  85%  |                                                                              |============================================================          |  86%  |                                                                              |=============================================================         |  87%  |                                                                              |=============================================================         |  88%  |                                                                              |==============================================================        |  88%  |                                                                              |==============================================================        |  89%  |                                                                              |===============================================================       |  90%  |                                                                              |================================================================      |  91%  |                                                                              |================================================================      |  92%  |                                                                              |=================================================================     |  92%  |                                                                              |=================================================================     |  93%  |                                                                              |==================================================================    |  94%  |                                                                              |==================================================================    |  95%  |                                                                              |===================================================================   |  95%  |                                                                              |===================================================================   |  96%  |                                                                              |====================================================================  |  96%  |                                                                              |====================================================================  |  97%  |                                                                              |====================================================================  |  98%  |                                                                              |===================================================================== |  98%  |                                                                              |===================================================================== |  99%  |                                                                              |======================================================================| 100%</code></pre>
 <pre class="r"><code>head(states) #Tidycensus state data from 2023 (matching 2023 BJS data)</code></pre>
 <pre><code>## Simple feature collection with 6 features and 5 fields
 ## Geometry type: MULTIPOLYGON
@@ -1288,7 +1483,457 @@ t.test(`Number of Females Incarcerated Per 100,000 People` ~ Strictness,
 ##                 23.77476                 33.47590</code></pre>
 </div>
 </div>
-<div id="table-of-contents" class="section level2">
+<div id="limitations" class="section level2">
+<h2>Limitations</h2>
+<p>Notably, there are a few areas of limitations within our project.
+Firstly, given that our BJS correctional statistics report is from 2023,
+the data is not fully up to date in 2026 and there might be changes that
+are simply not reflecting in our findings. Given that recent years have
+seen an increase in incarcerations rates since a historic period of the
+decline from 2010-2021 as previously mentioned, we were especially
+interested in post-2022 data, which had a reported increase in prison
+population data of up by 2% (Bureau of Justice Statistics 2025). The
+earliest available data from BJS being only in 2023 is a significant
+limitation in itself. We also did not look into local incarceration
+rates and focused on state and federal populations, for which some
+states had different definitions for incarceration and jurisdiction.</p>
+<p>To be more specific, the BJS identified several states that used
+different criteria in reporting incarceration information. For example,
+in Alaska, Connecticut, Delaware, Hawaii, Rhode Island, and Vermont,
+prisons and jails formed one integrated system and the data included
+total jail and prison populations. In Idaho and Missouri, they did not
+include people being held in federal or other state prisons in its
+sentenced jurisdiction count; in Illinois, Massachusetts, New Jersey,
+South Dakota, and Utah, their reported figures included a small number
+of prisoners sentenced to 1 year or less; in Maryland and Oklahoma, the
+figures included people who were waiting in county jail to be moved to
+state prison, whereas Nevada excluded people serving time in residential
+confinement from its sentenced jurisdiction count. Finally, Wisconsin
+sentenced population counts were based on time served rather than
+sentence length prior to 2023 (Bureau of Justice Statistics, National
+Prisoner Statistics, 2022 and 2023, Table 4). These inconsistencies
+across state reporting measures may have the potential to influence our
+findings. In doing this investigation, we must also recognize that
+incarceration divides strictly along the lines of biological sex. When
+gender is recognized, inconsistencies arise between state and federal
+institutions (Harkin 2016). Furthermore, prostitution severity presented
+by Decriminalize Sex Work could be out of date as some state laws are
+currently in flux. For example, as written on their “Oregon” report, DSW
+mentions “Oregon prostitution laws are currently in committee and may be
+receiving a full overhaul” (“Oregon Prostitution Laws,” DSW). However,
+there is no date attached to this note, and the statistics DSW links to
+for the summary of prostitution penalties has last been reviewed in 2016
+(“Oregon Prostitution and Solicitation Laws,” Find Law, 2016).</p>
+<p>Additionally, state strictness surrounding prostitution and the
+definitions for felony and misdemeanor offenses are defined differently
+by some states, which made it a labor-intensive task to determine an
+accurate estimate of the level of “strictness” and escalation to
+felonies. Besides Oklahoma, we defined the level of strictness based on
+the fact that these states will sometimes consider prostitution to be a
+felony. The states also use different criteria when considering if the
+prostitution case should be considered a felony. Furthermore, the rate
+at which the cases are punished as felonies is also not considered in
+our grouping, which could mean that not all “strict” states are equally
+strict. Nevertheless, such categorization was necessary for the t-test
+computation. If states did not specify their punishment for
+prostitution, such as length of imprisonment and the value of the fine,
+we referenced federal classifications to fill in the missing data and
+manually charted each state’s legal position on criminalizing
+prostitution to note any irregularities across states’ class offense
+definitions (see “States” for a further breakdown).</p>
+<p>Lastly, the prostitution data was largely unclear on whether some
+offenses were successfully charged or if the defendant was acquitted.
+This dataset was extracted from the FBI Crime Data Explorer, a national
+data resource that aims to provide transparency and promote access to
+crime statistics across the United States. In other words, we only were
+able to view the number of offenses pre-trial, before any final
+convictions were dealt as this precise information was not accessible
+online. As such, we encountered difficulties in measuring the precise
+number of offenses that an arrestee was successfully convicted for.
+Additionally, some states had very low prostitution offenses for a five
+year span, so we had to dismiss sex as a significant factor for these
+locations.</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<div id="project-importance" class="section level3">
+<h3>Project Importance</h3>
+<p>Overall, our project looked at 1) state incarceration rates—including
+combining the states into regions—deviating from the trend of only
+measuring federal incarceration rates, 2) observed incarceration rates
+by sex in each state/region, and 3) evaluated each state’s policies on
+prostitution laws to see whether the strictness of states’ prostitution
+laws could be correlated to disproportionately high incarceration rates
+among females compared to males. The importance of this project relies
+on how incarceration numbers can drastically vary from state to
+state/region to region, which is hidden when observing federal rates
+that cumulate state incarceration numbers together.</p>
+<p>This project looks at the total number of people incarcerated in each
+state, the total number of people incarcerated per 100,000 people in
+each state’s population, and the number of females/males incarcerated in
+each state/region per 100,000 people. On a regional level, this project
+looks at the total number of people incarcerated in each region, the
+number of people incarcerated per 100,000 in population for each region,
+the number of females incarcerated per 100,000 in population in each
+region, the number of females incarcerated per 100,000 in population in
+each region, and the number of males incarcerated per 100,000 in
+population in each region. Moreover, we also included spatial graphs.
+The spatial graphs look at the number of females incarcerated per
+100,000 people in each state and another spatial graph observes how the
+number of females incarcerated per 100,000 people to the number of males
+incarcerated per 100,000 people. By observing the incarceration numbers
+for every 100,000 people and total incarceration numbers, these data
+visualizations help us better understand state and regional-level
+incarceration numbers and how states/regions differ by sex in
+incarcerating people.</p>
+<p>This project also takes into consideration how sex can be a social
+stratifier within state/region incarceration rates, especially given
+that women are being incarcerated at higher rates over the past several
+decades (Sentencing Project 2025). This project finds that western
+states (e.g., Idaho, Montana, Wyoming) and southern states (e.g. Texas,
+Florida) have disproportionately high total incarceration numbers and
+number of females incarcerated per 100,000 people in the state. This may
+indicate that southern and western states may have a more punitive
+approach to policies that influence their incarceration numbers. We
+encourage more research to be done in this space and to further
+interrogate why states/the South and West region appear to have higher
+incarceration numbers compared to the rest of the country.</p>
+</div>
+<div id="results" class="section level3">
+<h3>Results</h3>
+</div>
+<div id="incarceration-numbers-per-100000-and-total-incarceration-numbers" class="section level3">
+<h3><em>Incarceration Numbers Per 100,000 and Total Incarceration
+Numbers</em></h3>
+<p>When we looked at total people incarcerated per state, Texas had the
+highest number of people incarcerated, California second, Florida third,
+and Georgia 4th. Out of the top 4 states with the highest number of
+incarceration, three of the states (Texas, Georgia, and Florida) are
+from the South. On the other hand, the states with the lowest number of
+incarcerated people were Vermont, Rhode Island, Alaska, and Maine. Out
+of the top 4 states with lowest numbers of incarcerated people, three of
+the states are from the Northeast (Vermont, Maine, and Rhode
+Island).</p>
+<p>However, it is important to consider how population size plays a
+critical role in this—the larger the state population, the more people
+who may be incarcerated, even if the incarceration rate is actually
+lower compared to a smaller population-sized state. Thus, when measuring
+the number of incarcerated people in each state per 100,000 people, the
+top 4 states change, which may be surprising. Mississippi has the higher
+number of people incarcerated per 100,000 people in the state, Louisiana
+second, Arkansas third, and Oklahoma fourth. All of these four states
+are from the South. When looking at the four states with the lowest
+number of people incarcerated per 100,000 people, Massachusetts has the
+lowest, Maine the second lowest, Rhode Island the third lowest, and
+Vermont the fourth lowest. All of these states are from the
+Northeast.</p>
+<p>This data analysis points to how the South has more incarcerated
+people than other regions, while the Northeast region has less
+incarcerated people than other regions. It may be surprising that
+states’ level of incarceration changes when population size is taken
+into consideration. Yet, even though the specific states with the
+highest/lowest incarceration numbers may change when viewing the flat
+total incarcerated vs. total incarcerated per 100,000 people in the
+population, the states’ regions stay quite similar. Accordingly, when we
+measured the region incarceration numbers, the South had the highest
+incarceration numbers when viewing the data results by 100,000 people in
+each region and total incarceration numbers per region. The Northeast
+also remained about the lowest in incarceration measures in both results
+as well. There may be certain policies and normalized behaviors from law
+enforcement in the South that lead to these disproportionately high
+incarceration numbers compared to other regions/states.</p>
+<p>Next, when looking at how incarceration by sex may differ by state,
+Idaho, Montana, South Dakota, and Oklahoma were some states that
+incarcerated the most females per 100,000 people in each state. There is
+variance in regions: Idaho and Montana are from the West, South Dakota
+from the Midwest, and Oklahoma is from the South. Massachusetts, New
+Jersey, Vermont, and New York were some states that incarcerated the
+least females per 100,00 people in each state. All four states are from
+the Northeast. The regional data also shows that the South has the most
+females incarcerated when looking at every 100,000 people and by total
+population across regions, and the Northeast has the lowest number of
+females incarcerated when looking at both incarceration numbers for
+every 100,000 people and by total population across regions (when not
+accounting for Hawaii and Alaska because as mentioned earlier, those two
+states do not belong to regions). Once again, the South has
+disproportionately high numbers of females incarcerated.</p>
+<p>To combine data analysis and policy relevance, this project outlines
+each state’s prostitution laws since females have disproportionately
+higher rates of arrest on prostitution charges than males. We highlight
+this policy to identify whether it may be correlated to sex
+discrimination in incarceration. Through the use of a t-test, this
+project identifies that stricter prostitution laws are statistically
+insignificant in explaining the heightened incarceration rates of
+females. When looking at states with the strictest prostitution laws
+(including Texas, South Carolina, Oklahoma, and more), they did not all
+have disproportionately higher incarceration numbers of females per
+100,000 people. Although prostitution laws disproportionately affect
+females in regards to their criminal legal system contact, this does not
+necessarily lead to higher incarceration numbers among females. This
+means that there may be other laws, policies, as well as police bias,
+that can lead to unequal criminal legal system contact among females in
+different states.</p>
+</div>
+<div id="next-steps-and-future-directions" class="section level3">
+<h3>Next Steps and Future Directions</h3>
+<p>We conclude by stating that more research needs to be done to
+understand how policies shape incarceration numbers. This project points
+to why there should be a sustained focus on looking at state and
+regional differences within incarceration rates. The U.S. is considered
+to have exceptionally high incarceration rates, but the data shows that
+Southern states are incarcerating people at much higher rates than the
+Northeast when looking at both total incarceration numbers per region
+and incarceration numbers per 100,000 people in the region. Generalizing
+U.S. incarceration rates under a national total can guise how some
+states are disproportionately contributing to the total incarceration
+numbers. If we are to reduce total incarceration numbers, this project
+highlights what states may need to focus on reform the most (i.e., the
+states with the highest incarceration numbers).</p>
+<p>This project contributes to understandings that emphasize how local
+states/regions are contributing disproportionately to the high
+incarceration rates in the country, pointing to the importance of
+further evaluating local and state policies (Vera Institute of Justice
+2026). The South is also incarcerating females at a disproportionately
+high rate compared to other regions. Future research can seek to more
+closely understand why—what is public opinion in the South towards
+criminal legal system punishment? How might political ideology
+(conservative vs. liberal ideals) shape opinions and policies within
+these states? How are law enforcement officers being trained in the
+South compared to the Northeast in ways that might lead to higher
+arrests and incarceration? All of these are future directions and next
+steps that this project can go in to better understand regional/state
+differences in national incarceration numbers.</p>
+<p>Although stricter prostitution laws (which are laws that
+disproportionately apply to the female sex) were found to be
+statistically insignificant in explaining the differences in the numbers
+of females incarcerated in states, this does not mean that prostitution
+laws have no significance on individuals’ lived experiences. Thus, we
+encourage qualitative research that employs interviews and ethnographic
+fieldnotes to understand how strict prostitution laws are shaping
+peoples’ lives. Moreover, there may be other mechanisms that we did not
+explore in this project that can explain the disproportionately high
+female incarceration numbers in the South. Is there higher policing in
+some states? How much discretion do court officials have in such laws
+being applied? All of these questions are directions that this research
+can go in to help better understand female incarceration numbers.</p>
+</div>
+</div>
+<div id="group-contributions" class="section level2">
+<h2>Group Contributions</h2>
+<div id="ava" class="section level3">
+<h3>Ava</h3>
+<ul>
+<li>Completed some of the data preprocessing (creating new columns for
+region calculations (e.g., female, male, total/100,000) as well as state
+calculations, added tidycensus to the data, created dataframe and
+columns for strict v not strict states, created data frame for # of
+female/# of male ratio for each state)</li>
+<li>Created stacked barcharts</li>
+<li>Created spatial maps</li>
+<li>Completed t-test</li>
+<li>Proofread code and made changes as fit</li>
+<li>Wrote the method section alongside Christine</li>
+<li>Created and presented method slides alongside Christine</li>
+<li>We all contributed to proofreading the report and finding the BJS
+dataset</li>
+<li>Went to office hours to debug w/ Christine</li>
+<li>Attended all team meetings</li>
+<li>Worked to complete the final report and knit pdf</li>
+</ul>
+</div>
+<div id="alex" class="section level3">
+<h3>Alex</h3>
+<ul>
+<li>Wrote initial code to create bar chart that represented
+incarceration rates by state
+<ul>
+<li>Involved setting up the code that would mutate state names and
+removing unnecessary data</li>
+</ul></li>
+<li>Manually went through FBI Crime Data Explorer to extract # of
+prostitution charges for all 50 states in the past 5 years</li>
+<li>Read through almost all state’s policy and legal codes on
+prostitution via DSW website to identify the punishment for each
+individual state
+<ul>
+<li>Identified what different charge types entailed (e.g. second degree
+misdemeanor in Florida)</li>
+<li>Analyzed this data to identify and label stricter states</li>
+</ul></li>
+<li>Wrote the introduction section of paper
+<ul>
+<li>Included reading through the media, pulling from previous coursework
+in SOC 180A, gathering facts/statistics, and doing a literature review
+(reading studies)</li>
+</ul></li>
+<li>Left comments, edits, and clarifications on all sections of the
+paper and incorporated feedback from Christine into the
+introduction</li>
+<li>Presented motivations section of presentation and explained one data
+source slide
+<ul>
+<li>Included creating a script<br />
+</li>
+</ul></li>
+<li>Created slides within the motivation section of the slide deck (some
+got cut day of presentation)</li>
+</ul>
+</div>
+<div id="christine" class="section level3">
+<h3>Christine</h3>
+<ul>
+<li>Helped edit the initial BJS dataset with Ava</li>
+<li>Went to OH with Ava to ask questions on debugging code/on the
+project</li>
+<li>Attended all group meetings to discuss project</li>
+<li>Wrote code in R to divide states into regions (e.g., using mutate(),
+case_match(), sum(), ggplot)
+<ul>
+<li>Developed chart that measured incarceration rates by region</li>
+</ul></li>
+<li>Wrote intro with Alex</li>
+<li>Pulled most class sources, pulled external sources</li>
+<li>Clarified research questions</li>
+<li>Wrote conclusion
+<ul>
+<li>Evaluated all results from data (identifying states and regions on
+incarceration numbers)</li>
+<li>Developed recommendations and directions for future research</li>
+</ul></li>
+<li>Helped find sources to project</li>
+<li>Wrote method section with Ava</li>
+<li>Reviewed the code (e.g., catch errors, make titles more clear)</li>
+<li>Created the slides with Ava for class presentation</li>
+<li>Reviewed the report, provided feedback, incorporated feedback
+(e.g.,made our intro connection to class reading; make language in the
+report clearer)</li>
+<li>Presented on barplots and conclusion + future directions for
+research during class presentation</li>
+<li>Provided feedback during presentation practice (i.e. language, same
+page on findings)</li>
+</ul>
+</div>
+<div id="luci" class="section level3">
+<h3>Luci</h3>
+<ul>
+<li>Wrote the data and limitations section + incorporated
+feedback/revisions</li>
+<li>Assisted with data collection for prostitution policy for below
+states + sourced information for the misdemeanor class key: Michigan,
+Minnesota, Mississippi, Missouri, Montana, Nebraska, New Hampshire, New
+Jersey, New Mexico, New York, North Carolina, Ohio, Oklahoma, Oregon,
+Pennsylvania, and Rhode Island</li>
+<li>Presented data and limitations slides for class presentations
+<ul>
+<li>Detailing relevance, sources, etc.</li>
+</ul></li>
+<li>Cross-checked and compiled all sources for “References” section</li>
+</ul>
+</div>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p>18 U.S. Code § 3559 - Sentencing classification of offenses. (2019).
+LII / Legal Information Institute. <a href="https://www.law.cornell.edu/uscode/text/18/3559" class="uri">https://www.law.cornell.edu/uscode/text/18/3559</a></p>
+<p>Alexander, M. (2010). The New Jim Crow.</p>
+<p>Brown, E. N. (2025, March 26). These States Are Moving in the Wrong
+Direction on Prostitution Laws. Yahoo News. <a href="https://www.yahoo.com/news/states-moving-wrong-direction-prostitution-154553786.html" class="uri">https://www.yahoo.com/news/states-moving-wrong-direction-prostitution-154553786.html</a></p>
+<p>Budd, K. (2024, July 24). Incarcerated Women and Girls. The
+Sentencing Project. <a href="https://www.sentencingproject.org/fact-sheet/incarcerated-women-and-girls/" class="uri">https://www.sentencingproject.org/fact-sheet/incarcerated-women-and-girls/</a></p>
+<p>Bureau of Justice Statistics. (n.d.). About BJS. Bureau of Justice
+Statistics. <a href="https://bjs.ojp.gov/about" class="uri">https://bjs.ojp.gov/about</a></p>
+<p>Carson, E. A., &amp; Kluckow, R. (2023, November 30). Prisoners in
+2022 – Statistical Tables. Bureau of Justice Statistics. <a href="https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables" class="uri">https://bjs.ojp.gov/library/publications/prisoners-2022-statistical-tables</a></p>
+<p>Comfort, M. (2008). Doing Time Together. University of Chicago
+Press.</p>
+<p>Council on Criminal Justice. (2024, July 9). Women’s Justice: A
+Preliminary Assessment of Women in the Criminal Justice System - Council
+on Criminal Justice. Council on Criminal Justice. <a href="https://counciloncj.org/womens-justice-a-preliminary-assessment-of-women-in-the-criminal-justice-system/" class="uri">https://counciloncj.org/womens-justice-a-preliminary-assessment-of-women-in-the-criminal-justice-system/</a></p>
+<p>Cullen, J. (2018, July 20). The History of Mass Incarceration.
+Brennan Center for Justice. <a href="https://www.brennancenter.org/our-work/analysis-opinion/history-mass-incarceration" class="uri">https://www.brennancenter.org/our-work/analysis-opinion/history-mass-incarceration</a></p>
+<p>Decriminalize Sex Work. (n.d.). Decriminalize Sex Work. <a href="https://decriminalizesex.work/" class="uri">https://decriminalizesex.work/</a></p>
+<p>Edward, W., Battle-Baptiste, W., &amp; Rusert, B. (2018). W. E. B. Du
+Bois’s data portraits : visualizing Black America : the color line at
+the turn of the twentieth century. The W.E.B. Du Bois Center At The
+University Of Massachusetts Amherst ; Hudson. (In class reading)</p>
+<p>Enos, S. (2026). Mass Incarceration: Triple Jeopardy for Women in a
+“Color-Blind” and Gender-Neutral Justice System. Digital Commons @ Salve
+Regina. <a href="https://digitalcommons.salve.edu/jift/vol6/iss1/2/" class="uri">https://digitalcommons.salve.edu/jift/vol6/iss1/2/</a></p>
+<p>FBI. (2025, January 15). Federal Bureau of Investigation Crime Data
+Explorer. Cjis.gov; Federal Bureau of Investigation. <a href="https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend" class="uri">https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/explorer/crime/crime-trend</a></p>
+<p>Incarceration Trends | Vera Institute of Justice. (2024, October 31).
+Trends.vera.org. <a href="https://trends.vera.org/" class="uri">https://trends.vera.org/</a></p>
+<p>Kajstura, A., &amp; Sawyer, W. (2024, March 5). Women’s mass
+incarceration: The whole pie 2024. Prison Policy Initiative. <a href="https://www.prisonpolicy.org/reports/pie2024women.html" class="uri">https://www.prisonpolicy.org/reports/pie2024women.html</a></p>
+<p>Kim, S. J., &amp; Peterson, C. (2020). The health effects of gendered
+and devalued work: health outcomes of incarcerated women engaging in sex
+work and care/service work. Health &amp; Justice, 8(1). <a href="https://doi.org/10.1186/s40352-020-00124-4" class="uri">https://doi.org/10.1186/s40352-020-00124-4</a></p>
+<p>Maine Prostitution and Solicitation Laws. (2016, April 11). FindLaw.
+<a href="https://www.findlaw.com/state/maine-law/maine-prostitution-and-solicitation-laws.html" class="uri">https://www.findlaw.com/state/maine-law/maine-prostitution-and-solicitation-laws.html</a></p>
+<p>Nellis, A. (2024, May 21). Mass Incarceration Trends. The Sentencing
+Project. <a href="https://www.sentencingproject.org/reports/mass-incarceration-trends/" class="uri">https://www.sentencingproject.org/reports/mass-incarceration-trends/</a></p>
+<p>Oregon Prostitution and Solicitation Laws. (2016, April 11). FindLaw.
+<a href="https://www.findlaw.com/state/oregon-law/oregon-prostitution-and-solicitation-laws.html" class="uri">https://www.findlaw.com/state/oregon-law/oregon-prostitution-and-solicitation-laws.html</a></p>
+<p>Prison Policy Initiative, &amp; Sawyer, W. (2026). Mass
+Incarceration: The Whole Pie 2026. Prisonpolicy.org. <a href="https://www.prisonpolicy.org/reports/pie2026.html" class="uri">https://www.prisonpolicy.org/reports/pie2026.html</a></p>
+<p>Snow, J. (2026). Map Viewer - Cholera Outbreak Map . Arcgis.com. <a href="https://www.arcgis.com/apps/mapviewer/index.html?webmap=16a719ed81524ef2ad86b57f6918712f" class="uri">https://www.arcgis.com/apps/mapviewer/index.html?webmap=16a719ed81524ef2ad86b57f6918712f</a>
+(In-class reading)</p>
+<p>Stemen, D. (2017). The Prison Paradox: More Incarceration Will Not
+Make Us Safer. <a href="https://vera-institute.files.svdcdn.com/production/downloads/publications/for-the-record-prison-paradox_02.pdf" class="uri">https://vera-institute.files.svdcdn.com/production/downloads/publications/for-the-record-prison-paradox_02.pdf</a></p>
+<p>BJS Table 42. (2017). FBI. <a href="https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/topic-pages/tables/table-42" class="uri">https://ucr.fbi.gov/crime-in-the-u.s/2017/crime-in-the-u.s.-2017/topic-pages/tables/table-42</a>
+US Census Bureau. (2017, October 24). U.S. Census Bureau at a Glance.
+The United States Census Bureau. <a href="https://www.census.gov/about/what/census-at-a-glance.html" class="uri">https://www.census.gov/about/what/census-at-a-glance.html</a></p>
+</div>
+<div id="appendix" class="section level2">
+<h2>Appendix</h2>
+<pre class="r"><code>library(RCurl)
+library(readr)
+
+pros_url &lt;- getURL(&quot;https://raw.githubusercontent.com/avaelisa/Final-Project-SOC10-avaluci/refs/heads/main/StrictnessProstitutionData.csv&quot;)
+
+# download prostitution data that we made (from github)
+prosdata &lt;- read_csv(pros_url)
+
+print(prosdata) #prostitution data that we made </code></pre>
+<pre><code>## # A tibble: 49 × 3
+##    `State Name` Charge for Prostitution and/or Potentia…¹ Offenses in Past 5 y…²
+##    &lt;chr&gt;        &lt;chr&gt;                                     &lt;chr&gt;                 
+##  1 Alabama      &quot;Class A misdemeanor&quot;                     348                   
+##  2 Alaska       &quot;Class B misdemeanor&quot;                     43                    
+##  3 Arizona      &quot;Class 1 misdemeanor&quot;                     2,231                 
+##  4 Arkansas     &quot;Class B misdemeanor on first offense\r\… 406                   
+##  5 California   &quot;Misdemeanor \r\n\r\nProbation is not an… 7,276                 
+##  6 Colorado     &quot;Petty offense&quot;                           1,223                 
+##  7 Connecticut  &quot;Class A misdemeanor&quot;                     308                   
+##  8 Delaware     &quot;Class B misdemeanor\r\n\r\nClass A misd… 109                   
+##  9 Florida      &quot;Second degree misdemeanor on first offe… 2,717                 
+## 10 Georgia      &quot;Misdemeanor&quot;                             1,395                 
+## # ℹ 39 more rows
+## # ℹ abbreviated names:
+## #   ¹​`Charge for Prostitution and/or Potential Consequences`,
+## #   ²​`Offenses in Past 5 years`</code></pre>
+<pre class="r"><code>url &lt;- getURL(&quot;https://raw.githubusercontent.com/avaelisa/soc10finalproject-alex-christine-ava-luci/refs/heads/main/soc10-dataset&quot;)
+
+# download incarceration data from the BJS (from github)
+data &lt;- read_csv(url)
+
+print(data) #uncleaned data downloaded from the BJS</code></pre>
+<pre><code>## # A tibble: 53 × 4
+##    Location        Total    Male Female
+##    &lt;chr&gt;           &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+##  1 U.S. total    1210308 1124435  85873
+##  2 Federal        143297  133551   9746
+##  3 All States    1067011  990884  76127
+##  4 Alabama         20181   18765   1416
+##  5 Alaska/b         1485    1415     70
+##  6 Arizona         33473   30513   2960
+##  7 Arkansas        18349   16815   1534
+##  8 California      95827   92017   3810
+##  9 Colorado        17084   15711   1373
+## 10 Connecticut/b    6643    6259    384
+## # ℹ 43 more rows</code></pre>
+</div>
+<div id="table-of-contents-1" class="section level2">
 <h2>Table of Contents</h2>
 <ul>
 <li><a href="index.html">Index</a></li>
@@ -1302,6 +1947,7 @@ Methods</a></li>
 References, and Appendix</a></li>
 <li><a href="CompleteReport.html">Complete Report</a></li>
 </ul>
+</div>
 </div>
 
 
